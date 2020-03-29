@@ -1,3 +1,6 @@
+import Brooklinen__WeightedBlanket
+ from '../images/Brooklinen__WeightedBlanket.png';
+
 import domino
  from '../images/domino.png';
 
@@ -9,7 +12,7 @@ const articles = [
     "source": "Brooklinen",
     "author":"MALLORY ABREU",
     "category":"Sleep",
-    "img": domino,
+    "img": Brooklinen__WeightedBlanket,
   },
   {
     "id":"6",
