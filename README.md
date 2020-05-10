@@ -1,1 +1,2 @@
-# Ok-Reboot Easy Plant Based Recipes
+# Ok-Reboot
+* Remote wellness destination

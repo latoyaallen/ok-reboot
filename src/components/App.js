@@ -1,8 +1,6 @@
 import React from 'react';
-import ArticleRow from './ArticleRow/ArticleRow';
-import Sidebar from './Sidebar/Sidebar';
-import articles from '../data/articles';
-
+import IntroText from './IntroText/IntroText';
+import Workouts from './Workouts/Workouts';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,8 +12,23 @@ class App extends React.Component {
   }
 
   handleHome() {
-    window.location.assign(`/`)
+    window.location.assign(`/`);
     this.setState({view: 'home'});
+  }
+
+  handleKettlebell() {
+    window.location.assign(`/kettlebell`);
+    this.setState({view: 'kettlebell'});
+  }
+
+  handleJumprope() {
+    window.location.assign(`/jumprope`);
+    this.setState({view: 'jumprope'});
+  }
+
+  handleBody() {
+    window.location.assign(`/body`);
+    this.setState({view: 'body'});
   }
 
   componentDidMount() {
@@ -27,17 +40,12 @@ class App extends React.Component {
 
   render() {
     let view;
-    const mostRecent = articles.slice(0,4);
 
     if(this.state.view === 'home') {
       view =
       <React.Fragment>
-        <ArticleRow
-          mostRecent={mostRecent}
-        />
-        <Sidebar
-          mostRecent={mostRecent}
-        />
+        <IntroText />
+        <Workouts />
       </React.Fragment>
     }
 
