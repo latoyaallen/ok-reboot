@@ -98,19 +98,37 @@ const styles = StyleSheet.create({
   },
 });
 
-const Article = (props) => (
+const Article = () => (
   <div className={css(styles.Article__container)}>
     <div className={css(styles.Article__imgContainer)}>
-      <img className={css(styles.Article__img)}  src={props.img} alt="Oops! Img" />
+      <img className={css(styles.Article__img)}  src={articles[0]['img']} alt="Oops! Img" />
     </div>
     <div className={css(styles.Article__text)}>
       <a
         className={css(styles.links)}
-        href={props.url}
+        href={articles[0]['url']}
         target="_blank"
         rel="noopener noreferrer">
-        {props.title}
+        {articles[0]['title']}
       </a>
+    </div>
+    <div className={css(styles.Article__text)}>
+      {articles[0]['source']}
+    </div>
+    <div className={css(styles.Article__imgContainer)}>
+      <img className={css(styles.Article__img)}  src={articles[1]['img']} alt="Oops! Img" />
+    </div>
+    <div className={css(styles.Article__text)}>
+      <a
+        className={css(styles.links)}
+        href={articles[1]['url']}
+        target="_blank"
+        rel="noopener noreferrer">
+        {articles[1]['title']}
+      </a>
+    </div>
+    <div className={css(styles.Article__text)}>
+      {articles[1]['source']}
     </div>
   </div>
 )

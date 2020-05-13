@@ -1,18 +1,21 @@
 import Brooklinen__WeightedBlanket
  from '../images/Brooklinen__WeightedBlanket.png';
 
+import Princeton__Gardening
+ from '../images/Princeton__Gardening.png';
+
 import domino
  from '../images/domino.png';
 
 const articles = [
   {
     "id":"3",
-    "title":"",
+    "title":"Sowing seeds of happiness: Emotional well-being while home gardening similar to other popular activities, study finds",
     "url":"https://environment.princeton.edu/news/emotional-well-being-while-home-gardening-similar-to-other-popular-activities-study-finds/",
     "source": "Princeton Environmental Institute",
     "author":"FILL IN",
     "category":"Gardening",
-    "img": Brooklinen__WeightedBlanket,
+    "img": Princeton__Gardening,
   },
   {
     "id":"4",

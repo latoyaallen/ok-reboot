@@ -1,7 +1,9 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import Header from './Header/Header'
-import Article from './Article/Article'
+import Articles from './Article/Articles'
+
+import articles from '../data/articles';
 
 import {
   MOBILE_PORTRAIT,
@@ -60,7 +62,9 @@ class App extends React.Component {
     view =
     <React.Fragment>
       <Header/>
-      <Article/>
+      <Articles
+        articleData={articles}
+      />
     </React.Fragment>
 
       return (
