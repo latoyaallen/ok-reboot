@@ -112,6 +112,12 @@ const Article = (props) => (
         {props.title}
       </a>
     </div>
+    <div className={css(styles.Article__text)}>
+      {props.source}
+    </div>
+    <div className={css(styles.Article__text)}>
+      {props.about}
+    </div>
   </div>
 )
 

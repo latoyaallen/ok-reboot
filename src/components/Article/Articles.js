@@ -38,6 +38,8 @@ const Articles = (props) => (
       <div key={d.id}>
         <Article
           title={d.title}
+          source={d.source}
+          about={d.about}
           author={d.author}
           url={d.url}
           img={d.img}
