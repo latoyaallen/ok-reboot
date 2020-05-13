@@ -6,6 +6,15 @@ import domino
 
 const articles = [
   {
+    "id":"3",
+    "title":"",
+    "url":"https://environment.princeton.edu/news/emotional-well-being-while-home-gardening-similar-to-other-popular-activities-study-finds/",
+    "source": "Princeton Environmental Institute",
+    "author":"FILL IN",
+    "category":"Gardening",
+    "img": Brooklinen__WeightedBlanket,
+  },
+  {
     "id":"4",
     "title":"Considering Getting a Weighted Comforter? Here's Why You Should",
     "url":"https://www.brooklinen.com/blogs/brookliving/considering-getting-a-weighted-blanket-heres-why-you-should",
