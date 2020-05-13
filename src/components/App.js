@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import Header from './Header/Header'
+import Article from './Article/Article'
 
 import {
   MOBILE_PORTRAIT,
@@ -59,6 +60,7 @@ class App extends React.Component {
     view =
     <React.Fragment>
       <Header/>
+      <Article/>
     </React.Fragment>
 
       return (

@@ -8,8 +8,10 @@ import {
   LAPTOPS,
 } from '../../lib/breakpoints';
 
+import articles from '../../data/articles';
+
 const styles = StyleSheet.create({
-  Header__container: {
+  Article__container: {
     [MOBILE_PORTRAIT]: {
       borderStyle: 'solid',
     },
@@ -27,7 +29,7 @@ const styles = StyleSheet.create({
     }
   },
 
-  Header__text: {
+  Article__text: {
     [MOBILE_PORTRAIT]: {
       textAlign: 'center',
     },
@@ -46,12 +48,12 @@ const styles = StyleSheet.create({
   },
 });
 
-const Header = () => (
-  <div className={css(styles.Header__container)}>
-    <div className={css(styles.Header__text)}>
-      ok-reboot
+const Article = () => (
+  <div className={css(styles.Article__container)}>
+    <div className={css(styles.Article__text)}>
+      {articles[0]['category']}
     </div>
   </div>
 )
 
-export default Header;
+export default Article;
