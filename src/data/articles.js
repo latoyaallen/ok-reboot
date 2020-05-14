@@ -8,8 +8,20 @@ import SweetPotatoSoul__balls
  from '../images/SweetPotatoSoul__balls.png';
 import MensHealth__Mobility
  from '../images/MensHealth__Mobility.png';
+import EastRiverPilates__Online
+ from '../images/EastRiverPilates__Online.png';
 
 const articles = [
+  {
+    "id":"2",
+    "title":"Need An Online Pilates Class?",
+    "about":"We've got you covered.",
+    "url":"https://eastriverpilates.com/online",
+    "source": "East River Pilates",
+    "author":"",
+    "category":"Fitness",
+    "img": EastRiverPilates__Online,
+  },
   {
     "id":"3",
     "title":"Sowing Seeds of Happines",
