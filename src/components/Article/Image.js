@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     }
   },
 
+  // https://khaledkzy.github.io/pixel-vh-vw-converter/
   Image: {
     [MOBILE_PORTRAIT]: {
       maxHeight: '200px',
