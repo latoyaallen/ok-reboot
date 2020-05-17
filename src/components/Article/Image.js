@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   // https://khaledkzy.github.io/pixel-vh-vw-converter/
   Image: {
     [MOBILE_PORTRAIT]: {
-      maxHeight: '55vh',
+      maxHeight: '70vh',
       maxWidth: '30vh',
     },
     [MOBILE_LANDSCAPE]: {
