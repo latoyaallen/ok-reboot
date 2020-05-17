@@ -35,12 +35,12 @@ const styles = StyleSheet.create({
   // https://khaledkzy.github.io/pixel-vh-vw-converter/
   Image: {
     [MOBILE_PORTRAIT]: {
-      maxHeight: '200px',
-      maxWidth: '175px',
+      maxHeight: '55vh',
+      maxWidth: '30vh',
     },
     [MOBILE_LANDSCAPE]: {
-      maxHeight: '350px',
-      maxWidth: '360px',
+      maxHeight: '92vh',
+      maxWidth: '92vh',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',
