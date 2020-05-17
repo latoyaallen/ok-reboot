@@ -10,18 +10,10 @@ import {
 
 
 const styles = StyleSheet.create({
-  Image__container: {
+  Text__container: {
     [MOBILE_PORTRAIT]: {
-      display: 'flex',
-      justifyContent: "center",
-      alignItems: 'center',
-      paddingBottom: '35px',
     },
     [MOBILE_LANDSCAPE]: {
-      display: 'flex',
-      justifyContent: "center",
-      alignItems: 'center',
-      paddingBottom: '40px',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',
@@ -34,15 +26,12 @@ const styles = StyleSheet.create({
     }
   },
 
-  // https://khaledkzy.github.io/pixel-vh-vw-converter/
-  Image: {
+  Text__text: {
     [MOBILE_PORTRAIT]: {
-      maxHeight: '70vh',
-      maxWidth: '30vh',
+      textAlign: 'center',
     },
     [MOBILE_LANDSCAPE]: {
-      maxHeight: '92vh',
-      maxWidth: '60vh',
+      textAlign: 'center',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',
@@ -53,13 +42,34 @@ const styles = StyleSheet.create({
     [LAPTOPS]: {
       display: 'none',
     }
+  },
+
+  links: {
+    textDecoration: 'none',
+    color: 'grey',
+    fontWeight: 'bold',
+    fontSize: '1.4em',
   },
 });
 
-const Image = (props) => (
-  <div className={css(styles.Image__container)}>
-    <img className={css(styles.Image)} src={props.img} alt="Oops! Img" />
+const Text = (props) => (
+  <div className={css(styles.Text__container)}>
+    <div className={css(styles.Text__text)}>
+      <a
+        className={css(styles.links)}
+        href={props.url}
+        target="_blank"
+        rel="noopener noreferrer">
+        {props.title}
+      </a>
+    </div>
+    <div className={css(styles.Text__text)}>
+      {props.source}
+    </div>
+    <div className={css(styles.Text__text)}>
+      {props.about}
+    </div>
   </div>
 )
 
-export default Image;
+export default Text;

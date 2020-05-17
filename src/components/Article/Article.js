@@ -9,6 +9,7 @@ import {
 } from '../../lib/breakpoints';
 
 import Image from './Image';
+import Text from './Text';
 
 const styles = StyleSheet.create({
   Article__container: {
@@ -63,21 +64,11 @@ const Article = (props) => (
     <Image
       img={props.img}
     />
-    <div className={css(styles.Article__text)}>
-      <a
-        className={css(styles.links)}
-        href={props.url}
-        target="_blank"
-        rel="noopener noreferrer">
-        {props.title}
-      </a>
-    </div>
-    <div className={css(styles.Article__text)}>
-      {props.source}
-    </div>
-    <div className={css(styles.Article__text)}>
-      {props.about}
-    </div>
+    <Text
+      source={props.source}
+      title={props.title}
+      about={props.about}
+    />
   </div>
 )
 
