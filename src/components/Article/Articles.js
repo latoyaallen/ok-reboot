@@ -13,11 +13,9 @@ import Article from './Article';
 const styles = StyleSheet.create({
   Articles__container: {
     [MOBILE_PORTRAIT]: {
-      borderStyle: 'solid',
       alignItems: 'center',
     },
     [MOBILE_LANDSCAPE]: {
-      borderStyle: 'solid',
       alignItems: 'center',
     },
     [TABLET_PORTRAIT]: {
@@ -46,7 +44,6 @@ const Articles = (props) => (
         />
       </div>
     ))}
-
   </div>
 )
 

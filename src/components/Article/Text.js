@@ -8,6 +8,9 @@ import {
   LAPTOPS,
 } from '../../lib/breakpoints';
 
+import Title from './Title';
+import Source from './Source';
+
 
 const styles = StyleSheet.create({
   Text__container: {
@@ -43,29 +46,17 @@ const styles = StyleSheet.create({
       display: 'none',
     }
   },
-
-  links: {
-    textDecoration: 'none',
-    color: 'grey',
-    fontWeight: 'bold',
-    fontSize: '1.4em',
-  },
 });
 
 const Text = (props) => (
   <div className={css(styles.Text__container)}>
-    <div className={css(styles.Text__text)}>
-      <a
-        className={css(styles.links)}
-        href={props.url}
-        target="_blank"
-        rel="noopener noreferrer">
-        {props.title}
-      </a>
-    </div>
-    <div className={css(styles.Text__text)}>
-      {props.source}
-    </div>
+    <Title
+      title={props.title}
+      url={props.url}
+    />
+    <Source
+      source={props.source}
+    />
     <div className={css(styles.Text__text)}>
       {props.about}
     </div>

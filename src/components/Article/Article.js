@@ -14,10 +14,8 @@ import Text from './Text';
 const styles = StyleSheet.create({
   Article__container: {
     [MOBILE_PORTRAIT]: {
-      borderStyle: 'solid',
     },
     [MOBILE_LANDSCAPE]: {
-      borderStyle: 'solid',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',
@@ -68,6 +66,7 @@ const Article = (props) => (
       source={props.source}
       title={props.title}
       about={props.about}
+      url={props.url}
     />
   </div>
 )

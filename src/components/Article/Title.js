@@ -8,20 +8,13 @@ import {
   LAPTOPS,
 } from '../../lib/breakpoints';
 
-
 const styles = StyleSheet.create({
-  Image__container: {
+  Title__container: {
     [MOBILE_PORTRAIT]: {
-      display: 'flex',
-      justifyContent: "center",
-      alignItems: 'center',
-      paddingBottom: '35px',
     },
     [MOBILE_LANDSCAPE]: {
-      display: 'flex',
-      justifyContent: "center",
-      alignItems: 'center',
-      paddingBottom: '45px',
+      textAlign: 'center',
+      paddingBottom: '35px',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',
@@ -34,14 +27,13 @@ const styles = StyleSheet.create({
     }
   },
 
-  Image: {
+  Title__text: {
     [MOBILE_PORTRAIT]: {
-      maxHeight: '70vh',
-      maxWidth: '30vh',
+      textAlign: 'center',
     },
     [MOBILE_LANDSCAPE]: {
-      maxHeight: '92vh',
-      maxWidth: '60vh',
+      textAlign: 'center',
+      color: 'pink',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',
@@ -52,13 +44,28 @@ const styles = StyleSheet.create({
     [LAPTOPS]: {
       display: 'none',
     }
+  },
+
+  Title__link: {
+    textDecoration: 'none',
+    fontSize: '1.3em',
+    textAlign: 'center',
+    width: '30%',
   },
 });
 
-const Image = (props) => (
-  <div className={css(styles.Image__container)}>
-    <img className={css(styles.Image)} src={props.img} alt="Oops! Img" />
+const Title = (props) => (
+  <div className={css(styles.Title__container)}>
+    <div className={css(styles.Title__text)}>
+      <a
+        className={css(styles.Title__link)}
+        href={props.url}
+        target="_blank"
+        rel="noopener noreferrer">
+        {props.title}
+      </a>
+    </div>
   </div>
 )
 
-export default Image;
+export default Title;

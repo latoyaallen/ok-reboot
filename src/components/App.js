@@ -71,6 +71,8 @@ class App extends React.Component {
         <div>
           <div className={css(styles.App__container)}>
             {view}
+            <h1>About</h1>
+            <h2>ok-reboot is a relaxing space built for us.</h2>
           </div>
           <div className={css(styles.App__mobileTextcontainer)}>
             I'm mobile only.
