@@ -13,17 +13,17 @@ const styles = StyleSheet.create({
     color: '#659d89',
     transform: 'rotate(90deg)',
     position: 'absolute',
-    zIndex: '10',
+    // zIndex: '10',
     top: '0',
     bottom: '0',
     right: '250px',
     textAlign: 'center',
     [MOBILE_PORTRAIT]: {
-    width: '250px',
-
+      width: '250px',
     },
     [MOBILE_LANDSCAPE]: {
-    width: '270px',
+      // perfect!
+      width: '270px',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',

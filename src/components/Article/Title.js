@@ -10,6 +10,9 @@ import {
 
 const styles = StyleSheet.create({
   Title__container: {
+    width: '60%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {
