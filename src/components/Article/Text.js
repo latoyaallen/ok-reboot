@@ -28,24 +28,6 @@ const styles = StyleSheet.create({
       display: 'none',
     }
   },
-
-  Text__text: {
-    [MOBILE_PORTRAIT]: {
-      textAlign: 'center',
-    },
-    [MOBILE_LANDSCAPE]: {
-      textAlign: 'center',
-    },
-    [TABLET_PORTRAIT]: {
-      display: 'none',
-    },
-    [TABLET_LANDSCAPE]: {
-      display: 'none',
-    },
-    [LAPTOPS]: {
-      display: 'none',
-    }
-  },
 });
 
 const Text = (props) => (
@@ -57,9 +39,6 @@ const Text = (props) => (
     <Source
       source={props.source}
     />
-    <div className={css(styles.Text__text)}>
-      {props.about}
-    </div>
   </div>
 )
 

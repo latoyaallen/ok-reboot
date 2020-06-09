@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
   },
 
   Title__link: {
+    color: 'black',
     textDecoration: 'none',
     fontSize: '1.3em',
     textAlign: 'center',

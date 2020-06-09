@@ -8,13 +8,22 @@ import {
   LAPTOPS,
 } from '../../lib/breakpoints';
 
-import Article from './Article';
-
 const styles = StyleSheet.create({
-  Articles__container: {
+  About__text: {
+    color: '#659d89',
+    transform: 'rotate(90deg)',
+    position: 'absolute',
+    zIndex: '10',
+    top: '0',
+    bottom: '0',
+    right: '250px',
+    textAlign: 'center',
     [MOBILE_PORTRAIT]: {
+    width: '250px',
+
     },
     [MOBILE_LANDSCAPE]: {
+    width: '270px',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',
@@ -28,21 +37,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const Articles = (props) => (
-  <div className={css(styles.Articles__container)}>
-    {props.articleData.map(d => (
-      <div key={d.id}>
-        <Article
-          title={d.title}
-          source={d.source}
-          about={d.about}
-          author={d.author}
-          url={d.url}
-          img={d.img}
-        />
-      </div>
-    ))}
+const About = () => (
+  <div className={css(styles.About__text)}>
+    <h4>a relaxing space built for us.</h4>
   </div>
 )
 
-export default Articles;
+export default About;

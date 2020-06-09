@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import Header from './Header/Header'
 import Articles from './Article/Articles'
+import About from './Article/About'
 
 import articles from '../data/articles';
 
@@ -17,8 +18,10 @@ import {
 const styles = StyleSheet.create({
   App__container: {
     [MOBILE_PORTRAIT]: {
+      display: 'grid',
     },
     [MOBILE_LANDSCAPE]: {
+      display: 'grid',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',
@@ -65,14 +68,13 @@ class App extends React.Component {
       <Articles
         articleData={articles}
       />
+      <About/>
     </React.Fragment>
 
       return (
         <div>
           <div className={css(styles.App__container)}>
             {view}
-            <h1>About</h1>
-            <h2>ok-reboot is a relaxing space built for us.</h2>
           </div>
           <div className={css(styles.App__mobileTextcontainer)}>
             I'm mobile only.

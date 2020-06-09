@@ -10,11 +10,11 @@ import {
 
 const styles = StyleSheet.create({
   Header__container: {
+    textAlign: 'center',
+    paddingBottom: '20px',
     [MOBILE_PORTRAIT]: {
-      borderStyle: 'solid',
     },
     [MOBILE_LANDSCAPE]: {
-      borderStyle: 'solid',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',
@@ -28,11 +28,13 @@ const styles = StyleSheet.create({
   },
 
   Header__text: {
+    color: '#659d89',
+    fontSize: '1.3em',
+    fontWeight: '500',
+    textDecoration: 'none',
     [MOBILE_PORTRAIT]: {
-      textAlign: 'center',
     },
     [MOBILE_LANDSCAPE]: {
-      textAlign: 'center',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',

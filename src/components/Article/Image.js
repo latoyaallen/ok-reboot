@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
 
   Image: {
     [MOBILE_PORTRAIT]: {
-      maxHeight: '70vh',
+      maxHeight: '90vh',
       maxWidth: '30vh',
     },
     [MOBILE_LANDSCAPE]: {

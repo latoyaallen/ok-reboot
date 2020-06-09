@@ -10,13 +10,12 @@ import {
 
 const styles = StyleSheet.create({
   Source__text: {
+    color: '#7e7e7e',
     [MOBILE_PORTRAIT]: {
       textAlign: 'center',
-      paddingBottom: '5%',
     },
     [MOBILE_LANDSCAPE]: {
       textAlign: 'center',
-      paddingBottom: '5%',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',
@@ -31,9 +30,9 @@ const styles = StyleSheet.create({
 });
 
 const Source = (props) => (
-    <div className={css(styles.Source__text)}>
-      {props.source}
-    </div>
+  <div className={css(styles.Source__text)}>
+    By {props.source}
+  </div>
 )
 
 export default Source;

@@ -28,33 +28,6 @@ const styles = StyleSheet.create({
     }
   },
 
-  Article__text: {
-    [MOBILE_PORTRAIT]: {
-      textAlign: 'center',
-      borderStyle: 'solid',
-    },
-    [MOBILE_LANDSCAPE]: {
-      textAlign: 'center',
-      color: 'pink',
-      borderStyle: 'solid',
-    },
-    [TABLET_PORTRAIT]: {
-      display: 'none',
-    },
-    [TABLET_LANDSCAPE]: {
-      display: 'none',
-    },
-    [LAPTOPS]: {
-      display: 'none',
-    }
-  },
-
-  links: {
-    textDecoration: 'none',
-    color: 'grey',
-    fontWeight: 'bold',
-    fontSize: '1.4em',
-  },
 });
 
 const Article = (props) => (
