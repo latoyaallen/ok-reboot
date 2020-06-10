@@ -9,7 +9,7 @@ import {
 } from '../lib/breakpoints';
 
 const styles = StyleSheet.create({
-  About__container: {
+  ContentMenu__container: {
     overflow: 'hidden',
     [MOBILE_PORTRAIT]: {
     },
@@ -25,14 +25,14 @@ const styles = StyleSheet.create({
       display: 'none',
     }
   },
-  About__text: {
+  ContentMenu__text: {
     color: '#659d89',
-    transform: 'rotate(90deg) translate(50%,50%)',
-    transformOrigin: '100% 50%',
-    right: '1%',
+    transform: 'rotate(-90deg) translate(-50%,50%)',
+    transformOrigin: '0 50%',
+    left: '1%',
+    // also needed for left
     top: '50%',
     bottom: '50%',
-    // also needed for left
     position: 'fixed',
     height: '1.5em',
     margin: 'auto',
@@ -53,18 +53,14 @@ const styles = StyleSheet.create({
   },
 });
 
-class About extends React.Component {
-  componentDidMount() {
-    // prevents entier window from scrolling
-    //   window.onscroll = function () { window.scrollTo(0, 0); };
-  }
+class ContentMenu extends React.Component {
   render() {
     return (
-      <div className={css(styles.About__container)}>
-        <h4 className={css(styles.About__text)}>a relaxing space built for us</h4>
+      <div className={css(styles.ContentMenu__container)}>
+        <h4 className={css(styles.ContentMenu__text)}>body - mind - space - about </h4>
       </div>
     );
   }
 }
 
-export default About;
+export default ContentMenu;

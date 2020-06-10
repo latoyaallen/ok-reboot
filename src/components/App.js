@@ -3,6 +3,7 @@ import { StyleSheet, css } from 'aphrodite';
 import Header from './Header/Header'
 import Articles from './Article/Articles'
 import About from './About'
+import ContentMenu from './ContentMenu'
 
 import articles from '../data/articles';
 
@@ -64,6 +65,7 @@ class App extends React.Component {
       <Articles
         articleData={articles}
       />
+      <ContentMenu/>
       <About/>
     </React.Fragment>
 
