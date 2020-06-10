@@ -12,6 +12,7 @@ import Article from './Article';
 
 const styles = StyleSheet.create({
   Articles__container: {
+    overflow: 'visible',
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {

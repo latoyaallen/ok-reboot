@@ -11,7 +11,7 @@ import {
 const styles = StyleSheet.create({
   Header__container: {
     textAlign: 'center',
-    paddingBottom: '20px',
+    paddingTop: '40px',
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {
@@ -33,8 +33,10 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     textDecoration: 'none',
     [MOBILE_PORTRAIT]: {
+    paddingBottom: '20px',
     },
     [MOBILE_LANDSCAPE]: {
+    paddingBottom: '40px',
     },
     [TABLET_PORTRAIT]: {
       display: 'none',

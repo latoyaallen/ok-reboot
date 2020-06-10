@@ -14,12 +14,12 @@ const articles = [
     "img": Golde__MatchaLoafCake,
   },
   {
-    "id":"6",
-    "title":"Energizing Coco Date Balls",
-    "url":"https://sweetpotatosoul.com/2018/05/energizing-coco-date-balls.html",
-    "about":"Jenne Claiborne shares a recipe we love",
-    "source": "Sweet Potato Soul",
-    "category":"Food",
+    "id":"2",
+    "title":"plant-o-pedia: philodendron brasil",
+    "url":"https://blog.jungalow.com/2020/05/plant-o-pedia-philodendron-brasil.html",
+    "about":"",
+    "source": "The Jungalow",
+    "category":"Plants",
     "img": SweetPotatoSoul__balls,
   },
   {

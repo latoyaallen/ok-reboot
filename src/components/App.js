@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import Header from './Header/Header'
 import Articles from './Article/Articles'
-import About from './Article/About'
+import About from './About'
 
 import articles from '../data/articles';
 
@@ -54,10 +54,6 @@ const styles = StyleSheet.create({
 });
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
 
   render() {
     let view;

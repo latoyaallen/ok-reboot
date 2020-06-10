@@ -13,7 +13,10 @@ import Text from './Text';
 
 const styles = StyleSheet.create({
   Article__container: {
+    overflow: 'visible',
     [MOBILE_PORTRAIT]: {
+      paddingTop: '30px',
+      paddingBottom: '30px',
     },
     [MOBILE_LANDSCAPE]: {
     },
