@@ -10,14 +10,12 @@ import {
 
 const styles = StyleSheet.create({
   Title__container: {
-    width: '60%',
     marginLeft: 'auto',
     marginRight: 'auto',
     [MOBILE_PORTRAIT]: {
+      maxWidth: '50%',
     },
     [MOBILE_LANDSCAPE]: {
-      textAlign: 'center',
-      paddingBottom: '35px',
     },
     [TABLET_PORTRAIT]: {
     },
@@ -29,18 +27,15 @@ const styles = StyleSheet.create({
   },
 
   Title__text: {
+    textAlign: 'center',
     [MOBILE_PORTRAIT]: {
-      textAlign: 'center',
+      fontSize: '0.9em',
     },
     [MOBILE_LANDSCAPE]: {
-      textAlign: 'center',
-      color: 'pink',
     },
     [TABLET_PORTRAIT]: {
-      display: 'none',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'none',
     },
     [LAPTOPS]: {
       display: 'none',

@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
       display: 'flex',
       justifyContent: "center",
       alignItems: 'center',
-      paddingBottom: '45px',
+      paddingBottom: '15px',
     },
     [TABLET_PORTRAIT]: {
     },

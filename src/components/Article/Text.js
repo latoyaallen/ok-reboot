@@ -14,6 +14,7 @@ import Source from './Source';
 
 const styles = StyleSheet.create({
   Text__container: {
+    paddingBottom: '100px',
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {

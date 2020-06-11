@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     position: 'fixed',
     height: '1.5em',
     margin: 'auto',
+    letterSpacing: '1px',
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {
@@ -40,7 +41,6 @@ const styles = StyleSheet.create({
     [TABLET_PORTRAIT]: {
     },
     [TABLET_LANDSCAPE]: {
-      bottom: '90%',
     },
     [LAPTOPS]: {
       display: 'none',

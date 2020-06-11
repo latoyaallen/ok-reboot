@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     position: 'fixed',
     height: '1.5em',
     margin: 'auto',
+    letterSpacing: '2px',
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {
@@ -40,7 +41,6 @@ const styles = StyleSheet.create({
     [TABLET_PORTRAIT]: {
     },
     [TABLET_LANDSCAPE]: {
-      bottom: '90%',
     },
     [LAPTOPS]: {
       display: 'none',
@@ -52,7 +52,7 @@ class About extends React.Component {
   render() {
     return (
       <div className={css(styles.About__container)}>
-        <h4 className={css(styles.About__text)}>a relaxing space built for us</h4>
+        <h4 className={css(styles.About__text)}>a  relaxing  space  built  for  us </h4>
       </div>
     );
   }
