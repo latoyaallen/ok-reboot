@@ -17,10 +17,8 @@ const styles = StyleSheet.create({
     [MOBILE_LANDSCAPE]: {
     },
     [TABLET_PORTRAIT]: {
-      display: 'none',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'none',
     },
     [LAPTOPS]: {
       display: 'none',
@@ -39,10 +37,8 @@ const styles = StyleSheet.create({
     paddingBottom: '40px',
     },
     [TABLET_PORTRAIT]: {
-      display: 'none',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'none',
     },
     [LAPTOPS]: {
       display: 'none',

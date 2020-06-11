@@ -16,10 +16,8 @@ const styles = StyleSheet.create({
     [MOBILE_LANDSCAPE]: {
     },
     [TABLET_PORTRAIT]: {
-      display: 'none',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'none',
     },
     [LAPTOPS]: {
       display: 'none',
@@ -30,22 +28,19 @@ const styles = StyleSheet.create({
     transform: 'rotate(-90deg) translate(-50%,50%)',
     transformOrigin: '0 50%',
     left: '1%',
-    // also needed for left
     top: '50%',
     bottom: '50%',
     position: 'fixed',
     height: '1.5em',
     margin: 'auto',
-    // also needed for left
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {
     },
     [TABLET_PORTRAIT]: {
-      display: 'none',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'none',
+      bottom: '90%',
     },
     [LAPTOPS]: {
       display: 'none',

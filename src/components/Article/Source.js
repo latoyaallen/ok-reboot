@@ -18,10 +18,8 @@ const styles = StyleSheet.create({
       textAlign: 'center',
     },
     [TABLET_PORTRAIT]: {
-      display: 'none',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'none',
     },
     [LAPTOPS]: {
       display: 'none',

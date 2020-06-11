@@ -20,10 +20,8 @@ const styles = StyleSheet.create({
       paddingBottom: '35px',
     },
     [TABLET_PORTRAIT]: {
-      display: 'none',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'none',
     },
     [LAPTOPS]: {
       display: 'none',

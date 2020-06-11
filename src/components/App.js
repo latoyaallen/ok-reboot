@@ -25,10 +25,10 @@ const styles = StyleSheet.create({
       display: 'grid',
     },
     [TABLET_PORTRAIT]: {
-      display: 'none',
+      display: 'grid',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'none',
+      display: 'grid',
     },
     [LAPTOPS]: {
       display: 'none',
@@ -36,8 +36,6 @@ const styles = StyleSheet.create({
   },
 
   App__mobileTextcontainer: {
-    color: '#659d89',
-    textAlign: 'center',
     [MOBILE_PORTRAIT]: {
       display: 'none',
     },
@@ -45,13 +43,16 @@ const styles = StyleSheet.create({
       display: 'none',
     },
     [TABLET_PORTRAIT]: {
-      display: 'block',
+      display: 'none',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'block',
+      color: 'pink',
+      display: 'none',
     },
     [LAPTOPS]: {
       display: 'block',
+      color: '#659d89',
+      textAlign: 'center',
     }
   },
 });
@@ -78,7 +79,7 @@ class App extends React.Component {
           </div>
           <div className={css(styles.App__mobileTextcontainer)}>
             <h1> This is a mobile experience.</h1>
-            <h1> Please use your phone or tablet to continue.</h1>
+            <h1> Please use your phone or flip your tablet to continue.</h1>
           </div>
         </div>
       );

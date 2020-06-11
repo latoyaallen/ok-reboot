@@ -24,10 +24,8 @@ const styles = StyleSheet.create({
       paddingBottom: '45px',
     },
     [TABLET_PORTRAIT]: {
-      display: 'none',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'none',
     },
     [LAPTOPS]: {
       display: 'none',
@@ -44,10 +42,8 @@ const styles = StyleSheet.create({
       maxWidth: '60vh',
     },
     [TABLET_PORTRAIT]: {
-      display: 'none',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'none',
     },
     [LAPTOPS]: {
       display: 'none',

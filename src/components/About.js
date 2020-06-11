@@ -16,10 +16,8 @@ const styles = StyleSheet.create({
     [MOBILE_LANDSCAPE]: {
     },
     [TABLET_PORTRAIT]: {
-      display: 'none',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'none',
     },
     [LAPTOPS]: {
       display: 'none',
@@ -32,20 +30,17 @@ const styles = StyleSheet.create({
     right: '1%',
     top: '50%',
     bottom: '50%',
-    // also needed for left
     position: 'fixed',
     height: '1.5em',
     margin: 'auto',
-    // also needed for left
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {
     },
     [TABLET_PORTRAIT]: {
-      display: 'none',
     },
     [TABLET_LANDSCAPE]: {
-      display: 'none',
+      bottom: '90%',
     },
     [LAPTOPS]: {
       display: 'none',
@@ -54,10 +49,6 @@ const styles = StyleSheet.create({
 });
 
 class About extends React.Component {
-  componentDidMount() {
-    // prevents entier window from scrolling
-    //   window.onscroll = function () { window.scrollTo(0, 0); };
-  }
   render() {
     return (
       <div className={css(styles.About__container)}>
