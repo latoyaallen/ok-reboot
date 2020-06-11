@@ -36,6 +36,8 @@ const styles = StyleSheet.create({
   },
 
   App__mobileTextcontainer: {
+    color: '#659d89',
+    textAlign: 'center',
     [MOBILE_PORTRAIT]: {
       display: 'none',
     },
@@ -75,7 +77,8 @@ class App extends React.Component {
             {view}
           </div>
           <div className={css(styles.App__mobileTextcontainer)}>
-            I'm mobile only.
+            <h1> This is a mobile experience.</h1>
+            <h1> Please use your phone or tablet to continue.</h1>
           </div>
         </div>
       );
