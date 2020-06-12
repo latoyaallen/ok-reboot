@@ -21,10 +21,10 @@ const mind = [
   },
   {
     "id":"2",
-    "title":"I AM Morning Affirmations for Women",
-    "url":"https://www.youtube.com/watch?v=j71q6zlbO3I&feature=youtu.be",
+    "title":"Books To Boost Your Mood & Aspirations",
+    "url":"https://blog.blkgrn.com/2020/03/25/books-to-boost-your-mood-aspirations/",
     "about":"",
-    "source": "Alanna Foxx",
+    "source": "BLK + GRN",
     "category":"mind",
     "img": Jungalow__philodendron,
   },
