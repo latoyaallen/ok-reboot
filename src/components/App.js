@@ -6,6 +6,7 @@ import About from './About'
 import ContentMenu from './ContentMenu/ContentMenu'
 
 import articles from '../data/articles';
+import body from '../data/body';
 
 import {
   MOBILE_PORTRAIT,
@@ -100,27 +101,28 @@ class App extends React.Component {
   render() {
     let view;
 
-    view =
-    <React.Fragment>
-      <Header/>
-      <Articles
-        articleData={articles}
-      />
-      <ContentMenu/>
-      <About/>
-    </React.Fragment>
+    if(this.state.view === 'body') {
+      view = <Articles articleData={body} />
+    } else if(this.state.view === 'home') {
+      view = <Articles articleData={articles} />
+    }
 
-      return (
-        <div>
-          <div className={css(styles.App__container)}>
+    return (
+      <div>
+        <div className={css(styles.App__container)}>
+          <React.Fragment>
+            <Header/>
             {view}
-          </div>
-          <div className={css(styles.App__mobileTextcontainer)}>
-            <h1> This is a mobile experience.</h1>
-            <h1> Please use your phone or flip your tablet to continue.</h1>
-          </div>
+            <ContentMenu/>
+            <About/>
+          </React.Fragment>
         </div>
-      );
+        <div className={css(styles.App__mobileTextcontainer)}>
+          <h1> This is a mobile experience.</h1>
+          <h1> Please use your phone or flip your tablet to continue.</h1>
+        </div>
+      </div>
+    );
   }
 }
 

@@ -28,7 +28,7 @@ const articles = [
   },
   {
     // Trinity Mouzon Wofford
-    "id":"1",
+    "id":"3",
     "title":"Easy Pure Matcha Loaf Cake",
     "about":"This cozy loaf recipe is our new go-to for weekends at home.",
     "url":"https://golde.co/blogs/the-golden-hour/make-this-pure-matcha-loaf-cake",
@@ -37,7 +37,7 @@ const articles = [
     "img": Golde__MatchaLoafCake,
   },
   {
-    "id":"6",
+    "id":"4",
     "title":"Energizing Coco Date Balls",
     "url":"https://sweetpotatosoul.com/2018/05/energizing-coco-date-balls.html",
     "about":"Jenne Claiborne shares a recipe we love",

@@ -1,6 +1,9 @@
- from '../images/Golde__MatchaLoafCake.png';
 import IsaWelly__GentlePilates
  from '../images/IsaWelly__GentlePilates.png';
+import SweetPotatoSoul__balls
+ from '../images/SweetPotatoSoul__balls.png';
+import Golde__MatchaLoafCake
+ from '../images/Golde__MatchaLoafCake.png';
 const body = [
   {
     "id":"100",
