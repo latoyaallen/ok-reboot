@@ -3,7 +3,7 @@ import { StyleSheet, css } from 'aphrodite';
 import Header from './Header/Header'
 import Articles from './Article/Articles'
 import About from './About'
-import ContentMenu from './ContentMenu'
+import ContentMenu from './ContentMenu/ContentMenu'
 
 import articles from '../data/articles';
 

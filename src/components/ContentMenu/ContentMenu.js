@@ -6,7 +6,9 @@ import {
   TABLET_PORTRAIT,
   TABLET_LANDSCAPE,
   LAPTOPS,
-} from '../lib/breakpoints';
+} from '../../lib/breakpoints';
+
+import LinkItem from './LinkItem';
 
 const styles = StyleSheet.create({
   ContentMenu__container: {
@@ -52,7 +54,7 @@ class ContentMenu extends React.Component {
   render() {
     return (
       <div className={css(styles.ContentMenu__container)}>
-        <h4 className={css(styles.ContentMenu__text)}>- body - mind - space - about -</h4>
+        <h4 className={css(styles.ContentMenu__text)}>- {<LinkItem name={"body"}/>} - {<LinkItem name={"mind"}/>} - {<LinkItem name={"space"}/>} - {<LinkItem name={"about"}/>} -</h4>
       </div>
     );
   }
