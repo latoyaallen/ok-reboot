@@ -52,7 +52,7 @@ class ContentMenu extends React.Component {
   render() {
     return (
       <div className={css(styles.ContentMenu__container)}>
-        <h4 className={css(styles.ContentMenu__text)}>body - mind - space - about </h4>
+        <h4 className={css(styles.ContentMenu__text)}>- body - mind - space - about -</h4>
       </div>
     );
   }

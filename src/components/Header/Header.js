@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
 
   Header__text: {
     color: '#659d89',
-    fontSize: '1.3em',
+    fontSize: '1.7em',
+    letterSpacing: '2px',
     fontWeight: '500',
     textDecoration: 'none',
     [MOBILE_PORTRAIT]: {
@@ -37,8 +38,10 @@ const styles = StyleSheet.create({
     paddingBottom: '40px',
     },
     [TABLET_PORTRAIT]: {
+    fontSize: '2.3em',
     },
     [TABLET_LANDSCAPE]: {
+    fontSize: '2.3em',
     },
     [LAPTOPS]: {
       display: 'none',
