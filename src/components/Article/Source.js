@@ -10,8 +10,10 @@ import {
 
 const styles = StyleSheet.create({
   Source__text: {
-    color: '#a0b3b5',
+    color: '#eab198',
     textAlign: 'center',
+    fontSize: '1.1em',
+    fontWeight: '500',
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {

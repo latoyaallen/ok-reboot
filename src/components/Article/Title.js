@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
   Title__container: {
     marginLeft: 'auto',
     marginRight: 'auto',
+    paddingBottom: '10px',
     [MOBILE_PORTRAIT]: {
       maxWidth: '50%',
     },
@@ -43,9 +44,10 @@ const styles = StyleSheet.create({
   },
 
   Title__link: {
-    color: 'black',
+    color: 'white',
     textDecoration: 'none',
-    fontSize: '1.3em',
+    fontSize: '1.9em',
+    fontWeight: '500',
     textAlign: 'center',
     width: '30%',
   },
