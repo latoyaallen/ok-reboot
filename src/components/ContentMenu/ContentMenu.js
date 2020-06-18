@@ -9,6 +9,7 @@ import {
 } from '../../lib/breakpoints';
 
 import LinkItem from './LinkItem';
+import ExternalLinkItem from './ExternalLinkItem';
 
 const styles = StyleSheet.create({
   ContentMenu__container: {
@@ -54,7 +55,7 @@ class ContentMenu extends React.Component {
   render() {
     return (
       <div className={css(styles.ContentMenu__container)}>
-        <h4 className={css(styles.ContentMenu__text)}>- {<LinkItem name={"body"}/>} - {<LinkItem name={"mind"}/>} - {<LinkItem name={"space"}/>} - {<LinkItem name={"about"}/>} -</h4>
+        <h4 className={css(styles.ContentMenu__text)}>- {<LinkItem name={"body"}/>} - {<LinkItem name={"mind"}/>} - {<LinkItem name={"space"}/>} - {<ExternalLinkItem name={"curated by"}/>} -</h4>
       </div>
     );
   }
