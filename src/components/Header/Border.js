@@ -8,11 +8,9 @@ import {
   LAPTOPS,
 } from '../../lib/breakpoints';
 
-import Border from './Border';
-
 const styles = StyleSheet.create({
-  Header__container: {
-    textAlign: 'center',
+  Border__container: {
+    paddingBottom: '1.9em',
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {
@@ -26,23 +24,17 @@ const styles = StyleSheet.create({
     }
   },
 
-  Header__text: {
+  Border__text: {
     color: '#659d89',
-    fontSize: '1.7em',
     letterSpacing: '2px',
-    fontWeight: '500',
-    textDecoration: 'none',
+    fontSize: '0.7em',
     [MOBILE_PORTRAIT]: {
-    paddingBottom: '20px',
     },
     [MOBILE_LANDSCAPE]: {
-    paddingBottom: '40px',
     },
     [TABLET_PORTRAIT]: {
-    fontSize: '2.3em',
     },
     [TABLET_LANDSCAPE]: {
-    fontSize: '2.3em',
     },
     [LAPTOPS]: {
       display: 'none',
@@ -50,13 +42,15 @@ const styles = StyleSheet.create({
   },
 });
 
-const Header = () => (
-  <div className={css(styles.Header__container)}>
-    <div className={css(styles.Header__text)}>
-      <Border />
-      ok-reboot
+const text =
+      "Spread good vibes today. Take some of my positivity.  Today is going to be a sucessful day.  And you're going to be satisfied at the end of the day. We're going to crush it. We need more people like you on the planet."
+
+const Border = () => (
+  <div className={css(styles.Border__container)}>
+    <div className={css(styles.Border__text)}>
+      <marquee> {text}</marquee>
     </div>
   </div>
 )
 
-export default Header;
+export default Border;
