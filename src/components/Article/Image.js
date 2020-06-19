@@ -42,8 +42,12 @@ const styles = StyleSheet.create({
       maxWidth: '60vh',
     },
     [TABLET_PORTRAIT]: {
+      maxHeight: '92vh',
+      maxWidth: '60vh',
     },
     [TABLET_LANDSCAPE]: {
+      maxHeight: '120vh',
+      maxWidth: '90vh',
     },
     [LAPTOPS]: {
       display: 'none',
