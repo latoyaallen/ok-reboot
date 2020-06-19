@@ -6,10 +6,10 @@ import {
   TABLET_PORTRAIT,
   TABLET_LANDSCAPE,
   LAPTOPS,
-} from '../../lib/breakpoints';
+} from '../lib/breakpoints';
 
 const styles = StyleSheet.create({
-  Border__container: {
+  PositivityAd__container: {
     paddingBottom: '1.9em',
     [MOBILE_PORTRAIT]: {
     },
@@ -24,10 +24,11 @@ const styles = StyleSheet.create({
     }
   },
 
-  Border__text: {
+  PositivityAd__text: {
+    textAlign: 'center',
     color: '#659d89',
     letterSpacing: '2px',
-    fontSize: '0.7em',
+    fontSize: '1.7em',
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {
@@ -45,12 +46,14 @@ const styles = StyleSheet.create({
 const text =
       "Spread good vibes today. Take some of my positivity.  Today is going to be a sucessful day.  And you're going to be satisfied at the end of the day. We're going to crush it. We need more people like you on the planet."
 
-const Border = () => (
-  <div className={css(styles.Border__container)}>
-    <div className={css(styles.Border__text)}>
-      <marquee> {text}</marquee>
+const PositivityAd = () => (
+  <div className={css(styles.PositivityAd__container)}>
+    <div className={css(styles.PositivityAd__text)}>
+      <p>Spread good vibes today.</p>
+      <p>Take some of my positivity.  Today is going to be a sucessful day.  And you're going to be satisfied at the end of the day.</p>
+
     </div>
   </div>
 )
 
-export default Border;
+export default PositivityAd;

@@ -4,6 +4,7 @@ import Header from './Header/Header'
 import Articles from './Article/Articles'
 import About from './About'
 import ContentMenu from './ContentMenu/ContentMenu'
+import PositivityAd from './PositivityAd'
 
 import articles from '../data/articles';
 import body from '../data/body';
@@ -99,12 +100,25 @@ class App extends React.Component {
   }
 
   render() {
-    let view;
+    // first three articles //
+    const firstThreeArticles = articles.slice(0, 3);
+    let topArticles;
 
-    if(this.state.view === 'body') {
-      view = <Articles articleData={body} />
-    } else if(this.state.view === 'home') {
-      view = <Articles articleData={articles} />
+    if(this.state.view === 'home') {
+      topArticles = <Articles articleData={firstThreeArticles} />
+    } else if(this.state.view === 'body') {
+      topArticles = <Articles articleData={firstThreeArticles} />
+    }
+
+
+    // remaining articles //
+    const remainingArticles = articles.slice(3,4);
+    let bodyArticles;
+
+    if(this.state.view === 'home') {
+      bodyArticles = <Articles articleData={remainingArticles} />
+    } else if(this.state.view === 'body') {
+      bodyArticles = <Articles articleData={remainingArticles} />
     }
 
     return (
@@ -112,9 +126,11 @@ class App extends React.Component {
         <div className={css(styles.App__container)}>
           <React.Fragment>
             <Header/>
-            {view}
+            {topArticles}
             <ContentMenu/>
             <About/>
+            <PositivityAd />
+            {bodyArticles}
           </React.Fragment>
         </div>
         <div className={css(styles.App__mobileTextcontainer)}>

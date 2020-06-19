@@ -8,8 +8,6 @@ import {
   LAPTOPS,
 } from '../../lib/breakpoints';
 
-import Border from './Border';
-
 const styles = StyleSheet.create({
   Header__container: {
     textAlign: 'center',
@@ -53,7 +51,6 @@ const styles = StyleSheet.create({
 const Header = () => (
   <div className={css(styles.Header__container)}>
     <div className={css(styles.Header__text)}>
-      <Border />
       ok-reboot
     </div>
   </div>
