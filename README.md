@@ -1,2 +1,2 @@
 # Ok-Reboot
-* Remote wellness destination
+* a  relaxing  space  built  for  us
