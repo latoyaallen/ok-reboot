@@ -17,7 +17,7 @@ const mind = [
     "about":"",
     "source": "Malaika Brooks-Smith-Lowe",
     "category":"mind",
-    "img": Jungalow__philodendron,
+    "img": Malika__Meditation,
   },
   {
     "id":"2",

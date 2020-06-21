@@ -7,7 +7,6 @@ import ContentMenu from './ContentMenu/ContentMenu'
 import PositivityAd from './PositivityAd'
 
 import articles from '../data/articles';
-import body from '../data/body';
 
 import {
   MOBILE_PORTRAIT,
@@ -109,10 +108,12 @@ class App extends React.Component {
     } else if(this.state.view === 'body') {
       topArticles = <Articles articleData={firstThreeArticles} />
     }
+    // first three articles //
 
 
     // remaining articles //
-    const remainingArticles = articles.slice(3,4);
+    console.log(articles.length);
+    const remainingArticles = articles.slice(3, articles.length);
     let bodyArticles;
 
     if(this.state.view === 'home') {
@@ -120,6 +121,7 @@ class App extends React.Component {
     } else if(this.state.view === 'body') {
       bodyArticles = <Articles articleData={remainingArticles} />
     }
+    // remaining articles //
 
     return (
       <div>

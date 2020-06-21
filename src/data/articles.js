@@ -6,6 +6,8 @@ import IsaWelly__GentlePilates
  from '../images/IsaWelly__GentlePilates.png';
 import Jungalow__philodendron
  from '../images/Jungalow__philodendron.png';
+import Malaika__Meditation
+ from '../images/Malaika__Meditation.png';
 const articles = [
   {
     // Trinity Mouzon Wofford
@@ -38,6 +40,15 @@ const articles = [
   },
   {
     "id":"4",
+    "title":"5 Sense Meditation || Travelasana with Malaika",
+    "url":"https://www.youtube.com/watch?v=ieulO8pVrkQ&feature=youtu.be",
+    "about":"",
+    "source": "Malaika Brooks-Smith-Lowe",
+    "category":"mind",
+    "img": Malaika__Meditation,
+  },
+  {
+    "id":"5",
     "title":"Energizing Coco Date Balls",
     "url":"https://sweetpotatosoul.com/2018/05/energizing-coco-date-balls.html",
     "about":"Jenne Claiborne shares a recipe we love",
