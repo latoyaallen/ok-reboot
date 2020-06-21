@@ -9,7 +9,7 @@ import {
 } from '../lib/breakpoints';
 
 const styles = StyleSheet.create({
-  PositivityAd__container: {
+  PositivityAd3__container: {
     paddingBottom: '5.9em',
     [MOBILE_PORTRAIT]: {
     },
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     }
   },
 
-  PositivityAd__text: {
+  PositivityAd3__text: {
     textAlign: 'center',
     color: '#659d89',
     letterSpacing: '2px',
@@ -43,13 +43,13 @@ const styles = StyleSheet.create({
   },
 });
 
-const PositivityAd = () => (
-  <div className={css(styles.PositivityAd__container)}>
-    <div className={css(styles.PositivityAd__text)}>
-      <p>Take some of my positivity</p>
-      <p>and spread good vibes today.</p>
+const PositivityAd3 = () => (
+  <div className={css(styles.PositivityAd3__container)}>
+    <div className={css(styles.PositivityAd3__text)}>
+      <p>Tomorrow is going to be a sucessful day,</p>
+      <p>and you're going to be satisfied at the end of the day.</p>
     </div>
   </div>
 )
 
-export default PositivityAd;
+export default PositivityAd3;

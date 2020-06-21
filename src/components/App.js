@@ -5,6 +5,8 @@ import Articles from './Article/Articles'
 import About from './About'
 import ContentMenu from './ContentMenu/ContentMenu'
 import PositivityAd from './PositivityAd'
+import PositivityAd2 from './PositivityAd2'
+import PositivityAd3 from './PositivityAd3'
 
 import articles from '../data/articles';
 
@@ -111,15 +113,15 @@ class App extends React.Component {
     // first three articles //
 
 
-    // remaining articles //
+    // middle articles //
     console.log(articles.length);
-    const remainingArticles = articles.slice(3, articles.length);
-    let bodyArticles;
+    const middleArticleData = articles.slice(3, articles.length);
+    let middleArticles;
 
     if(this.state.view === 'home') {
-      bodyArticles = <Articles articleData={remainingArticles} />
+      middleArticles = <Articles articleData={middleArticleData} />
     } else if(this.state.view === 'body') {
-      bodyArticles = <Articles articleData={remainingArticles} />
+      middleArticles = <Articles articleData={middleArticleData} />
     }
     // remaining articles //
 
@@ -131,8 +133,10 @@ class App extends React.Component {
             {topArticles}
             <ContentMenu/>
             <About/>
+            <PositivityAd2 />
+            {middleArticles}
             <PositivityAd />
-            {bodyArticles}
+            <PositivityAd3 />
           </React.Fragment>
         </div>
         <div className={css(styles.App__mobileTextcontainer)}>

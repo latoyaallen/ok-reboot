@@ -9,7 +9,7 @@ import {
 } from '../lib/breakpoints';
 
 const styles = StyleSheet.create({
-  PositivityAd__container: {
+  PositivityAd2__container: {
     paddingBottom: '5.9em',
     [MOBILE_PORTRAIT]: {
     },
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     }
   },
 
-  PositivityAd__text: {
+  PositivityAd2__text: {
     textAlign: 'center',
     color: '#659d89',
     letterSpacing: '2px',
@@ -43,13 +43,22 @@ const styles = StyleSheet.create({
   },
 });
 
-const PositivityAd = () => (
-  <div className={css(styles.PositivityAd__container)}>
-    <div className={css(styles.PositivityAd__text)}>
-      <p>Take some of my positivity</p>
-      <p>and spread good vibes today.</p>
+const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+const getDay = (days) => {
+  const now = new Date();
+  return days[now.getDay()]
+}
+
+
+const PositivityAd2 = () => (
+  <div className={css(styles.PositivityAd2__container)}>
+    <div className={css(styles.PositivityAd2__text)}>
+      <p>Today is {getDay(days)}.</p>
+      <p>Shake off the stress.</p>
+      <p>Celebrate your wins.</p>
     </div>
   </div>
 )
 
-export default PositivityAd;
+export default PositivityAd2;
