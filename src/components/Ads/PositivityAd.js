@@ -6,7 +6,7 @@ import {
   TABLET_PORTRAIT,
   TABLET_LANDSCAPE,
   LAPTOPS,
-} from '../lib/breakpoints';
+} from '../../lib/breakpoints';
 
 const styles = StyleSheet.create({
   PositivityAd__container: {

@@ -4,9 +4,8 @@ import Header from './Header/Header'
 import Articles from './Article/Articles'
 import About from './About'
 import ContentMenu from './ContentMenu/ContentMenu'
-import PositivityAd from './PositivityAd'
-import PositivityAd2 from './PositivityAd2'
-import PositivityAd3 from './PositivityAd3'
+import PositivityAd2 from './Ads/PositivityAd2'
+import PositivityAd3 from './Ads/PositivityAd3'
 
 import articles from '../data/articles';
 
@@ -135,7 +134,6 @@ class App extends React.Component {
             <About/>
             <PositivityAd2 />
             {middleArticles}
-            <PositivityAd />
             <PositivityAd3 />
           </React.Fragment>
         </div>

@@ -29,7 +29,6 @@ const articles = [
     "img": Jungalow__philodendron,
   },
   {
-    // Trinity Mouzon Wofford
     "id":"3",
     "title":"Easy Pure Matcha Loaf Cake",
     "about":"This cozy loaf recipe is our new go-to for weekends at home.",
@@ -56,7 +55,6 @@ const articles = [
     "category":"Belly",
     "img": SweetPotatoSoul__balls,
   },
-
 ];
 
 export default articles;
