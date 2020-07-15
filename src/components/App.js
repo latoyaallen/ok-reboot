@@ -5,7 +5,6 @@ import Articles from './Article/Articles'
 import About from './About'
 import ContentMenu from './ContentMenu/ContentMenu'
 import PositivityAd2 from './Ads/PositivityAd2'
-import PositivityAd3 from './Ads/PositivityAd3'
 
 import articles from '../data/articles';
 
@@ -134,7 +133,6 @@ class App extends React.Component {
             <About/>
             <PositivityAd2 />
             {middleArticles}
-            <PositivityAd3 />
           </React.Fragment>
         </div>
         <div className={css(styles.App__mobileTextcontainer)}>
