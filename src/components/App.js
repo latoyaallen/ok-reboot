@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import Header from './Header/Header'
 import Articles from './Article/Articles'
@@ -58,90 +58,81 @@ const styles = StyleSheet.create({
   },
 });
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {view: 'home'};
-    this.handleHome = this.handleHome.bind(this);
-  }
+function App() {
+  // Declare a new state variable, which we'll call "home"
+  const [view, setView] = useState('home');
 
-  handleHome() {
-    window.location.assign(`/`)
-    this.setState({view: 'home'});
-  }
-
-  componentDidMount() {
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
     const pathname = window.location.pathname.substring(1,24);
 
     if(pathname === 'body') {
-      this.setState({view: 'body'});
+      setView("body")
     }
 
     if(pathname === 'belly') {
-      this.setState({view: 'belly'});
+      setView("belly")
     }
 
     if(pathname === 'mind') {
-      this.setState({view: 'mind'});
+      setView("mind")
     }
 
     if(pathname === 'space') {
-      this.setState({view: 'space'});
+      setView("mind")
     }
 
     if(pathname === 'about') {
-      this.setState({view: 'about'});
+      setView("about")
     }
 
     if(pathname === 'home') {
-      this.setState({view: 'home'});
+      setView("home")
     }
+  });
+
+  // first three articles //
+  const firstThreeArticles = articles.slice(0, 3);
+  let topArticles;
+
+  if(view === 'home') {
+    topArticles = <Articles articleData={firstThreeArticles} />
+  } else if(view === 'body') {
+    topArticles = <Articles articleData={firstThreeArticles} />
   }
-
-  render() {
-    // first three articles //
-    const firstThreeArticles = articles.slice(0, 3);
-    let topArticles;
-
-    if(this.state.view === 'home') {
-      topArticles = <Articles articleData={firstThreeArticles} />
-    } else if(this.state.view === 'body') {
-      topArticles = <Articles articleData={firstThreeArticles} />
-    }
-    // first three articles //
+  // first three articles //
 
 
-    // middle articles //
-    console.log(articles.length);
-    const middleArticleData = articles.slice(3, articles.length);
-    let middleArticles;
+  // middle articles //
+  console.log(articles.length);
+  const middleArticleData = articles.slice(3, articles.length);
+  let middleArticles;
 
-    if(this.state.view === 'home') {
-      middleArticles = <Articles articleData={middleArticleData} />
-    } else if(this.state.view === 'body') {
-      middleArticles = <Articles articleData={middleArticleData} />
-    }
-    // remaining articles //
+  if(view === 'home') {
+    middleArticles = <Articles articleData={middleArticleData} />
+  } else if(this.state.view === 'body') {
+    middleArticles = <Articles articleData={middleArticleData} />
+  }
+  // remaining articles //
 
-    return (
-      <div>
-        <div className={css(styles.App__container)}>
-          <React.Fragment>
-            <Header/>
-            {topArticles}
-            <ContentMenu/>
-            <About/>
-            <PositivityAd2 />
-            {middleArticles}
-          </React.Fragment>
-        </div>
-        <div className={css(styles.App__mobileTextcontainer)}>
-          <h1> This is a mobile experience.</h1>
-          <h1> Please use your phone or flip your tablet to continue.</h1>
-        </div>
+  return (
+    <div>
+      <div className={css(styles.App__container)}>
+        <React.Fragment>
+          <Header/>
+          {topArticles}
+          <ContentMenu/>
+          <About/>
+          <PositivityAd2 />
+          {middleArticles}
+        </React.Fragment>
       </div>
-    );
-  }
+      <div className={css(styles.App__mobileTextcontainer)}>
+        <h1> This is a mobile experience.</h1>
+        <h1> Please use your phone or flip your tablet to continue.</h1>
+      </div>
+    </div>
+  );
 }
 
 export default App;
