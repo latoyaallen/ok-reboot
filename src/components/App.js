@@ -16,6 +16,8 @@ import {
   LAPTOPS,
 } from '../lib/breakpoints';
 
+const NUM_ARTICLES_IN_CHUNK = 3;
+
 
 const styles = StyleSheet.create({
   App__container: {
@@ -59,8 +61,9 @@ const styles = StyleSheet.create({
 });
 
 function App() {
-  // Declare a new state variable, which we'll call "home"
-  const [view, setView] = useState('home');
+  // Declare a new state variable called page.
+  // When the app loads, set the page to 'home'
+  const [page, setView] = useState('home');
 
   // Similar to componentDidMount and componentDidUpdate:
   // React Hook useEffect contains a call to 'setView'. Without a list of dependencies, this can lead to an infinite chain of updates.
@@ -94,28 +97,26 @@ function App() {
   }, []);
 
   // first three articles //
-  const firstThreeArticles = articles.slice(0, 3);
+  const firstThreeArticles = articles.slice(0, NUM_ARTICLES_IN_CHUNK);
   let topArticles;
 
-  if(view === 'home') {
+  if(page === 'home') {
     topArticles = <Articles articleData={firstThreeArticles} />
-  } else if(view === 'body') {
+  } else if(page === 'body') {
     topArticles = <Articles articleData={firstThreeArticles} />
   }
   // first three articles //
 
 
   // middle articles //
-  console.log(articles.length);
-  const middleArticleData = articles.slice(3, articles.length);
+  const middleArticleData = articles.slice(NUM_ARTICLES_IN_CHUNK, articles.length);
   let middleArticles;
 
-  if(view === 'home') {
+  if(page === 'home') {
     middleArticles = <Articles articleData={middleArticleData} />
-  } else if(this.state.view === 'body') {
+  } else if(this.state.page === 'body') {
     middleArticles = <Articles articleData={middleArticleData} />
   }
-  // remaining articles //
 
   return (
     <div>
