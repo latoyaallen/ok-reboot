@@ -63,6 +63,8 @@ function App() {
   const [view, setView] = useState('home');
 
   // Similar to componentDidMount and componentDidUpdate:
+  // React Hook useEffect contains a call to 'setView'. Without a list of dependencies, this can lead to an infinite chain of updates.
+  // To fix this, pass [] as a second argument to the useEffect Hook  react-hooks/exhaustive-deps
   useEffect(() => {
     const pathname = window.location.pathname.substring(1,24);
 
@@ -89,7 +91,7 @@ function App() {
     if(pathname === 'home') {
       setView("home")
     }
-  });
+  }, []);
 
   // first three articles //
   const firstThreeArticles = articles.slice(0, 3);
