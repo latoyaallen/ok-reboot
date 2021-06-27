@@ -17,6 +17,8 @@ import {
 } from '../lib/breakpoints';
 
 const NUM_ARTICLES_IN_CHUNK = 3;
+const START_PATHNANE_RANGE = 1;
+const END_PATHNAME_RANGE = 24;
 
 
 const styles = StyleSheet.create({
@@ -69,7 +71,7 @@ function App() {
   // React Hook useEffect contains a call to 'setView'. Without a list of dependencies, this can lead to an infinite chain of updates.
   // To fix this, pass [] as a second argument to the useEffect Hook  react-hooks/exhaustive-deps
   useEffect(() => {
-    const pathname = window.location.pathname.substring(1,24);
+    const pathname = window.location.pathname.substring(START_PATHNANE_RANGE, END_PATHNAME_RANGE);
 
     if(pathname === 'body') {
       setView("body")
