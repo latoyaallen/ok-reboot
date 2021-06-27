@@ -52,7 +52,7 @@ class About extends React.Component {
   render() {
     return (
       <div className={css(styles.About__container)}>
-        <h4 className={css(styles.About__text)}>a  relaxing  space  built  for  us </h4>
+        <h4 className={css(styles.About__text)}>reboot on the weekends</h4>
       </div>
     );
   }
