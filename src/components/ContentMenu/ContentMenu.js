@@ -55,13 +55,7 @@ class ContentMenu extends React.Component {
   render() {
     return (
       <div className={css(styles.ContentMenu__container)}>
-        <h4 className={css(styles.ContentMenu__text)}>
-          - {<LinkItem name={"books"}/>}
-          - {<LinkItem name={"podcasts"}/>} -
-          {<LinkItem name={"workouts"}/>} -
-          {<LinkItem name={"meals"}/>} -
-          {<LinkItem name={"plants"}/>} -
-          </h4>
+        <h4 className={css(styles.ContentMenu__text)}>- {<LinkItem name={"body"}/>} - {<LinkItem name={"mind"}/>} - {<LinkItem name={"space"}/>} - {<LinkItem name={"about"}/>} -</h4>
       </div>
     );
   }
