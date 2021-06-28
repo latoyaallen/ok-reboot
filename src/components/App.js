@@ -68,16 +68,15 @@ function App() {
   // When the app loads, set the page to 'home'
   const [page, setPage] = useState('home');
 
-  // Similar to componentDidMount and componentDidUpdate:
+  // useEffect is Similar to componentDidMount and componentDidUpdate
+  //
   // React Hook useEffect contains a call to 'setPage'. Without a list of dependencies, this can lead to an infinite chain of updates.
   // To fix this, pass [] as a second argument to the useEffect Hook  react-hooks/exhaustive-deps
   useEffect(() => {
     const pathname = window.location.pathname.substring(START_PATHNANE_RANGE, END_PATHNAME_RANGE);
     setPathname(pathname, setPage);
-
   }, []);
 
-  // first three articles //
   const firstThreeArticles = articles.slice(0, NUM_ARTICLES_IN_CHUNK);
   let topArticles;
 
@@ -86,16 +85,13 @@ function App() {
   } else if(page === 'body') {
     topArticles = <Articles articleData={firstThreeArticles} />
   }
-  // first three articles //
 
-
-  // middle articles //
   const middleArticleData = articles.slice(NUM_ARTICLES_IN_CHUNK, articles.length);
   let middleArticles;
 
   if(page === 'home') {
     middleArticles = <Articles articleData={middleArticleData} />
-  } else if(this.state.page === 'body') {
+  } else if(page === 'body') {
     middleArticles = <Articles articleData={middleArticleData} />
   }
 
