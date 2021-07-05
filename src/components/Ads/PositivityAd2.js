@@ -47,7 +47,7 @@ const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Satur
 
 const getDay = (days) => {
   const now = new Date();
-  return days[now.getDay()]
+  return days[now.getDay()];
 }
 
 
