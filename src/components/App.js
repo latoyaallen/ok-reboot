@@ -7,6 +7,9 @@ import ContentMenu from './ContentMenu/ContentMenu';
 import PositivityAd2 from './Ads/PositivityAd2';
 import articles from '../data/articles';
 import setPathname from '../lib/setPathname';
+import { useDispatch} from 'react-redux';
+import Button from './UI/Button/Button';
+
 
 import {
   MOBILE_PORTRAIT,
@@ -16,10 +19,11 @@ import {
   LAPTOPS,
 } from '../lib/breakpoints';
 
-// move to shared/constants
+// move to /constants
 const NUM_ARTICLES_IN_CHUNK = 3;
 const START_PATHNANE_RANGE = 1;
 const END_PATHNAME_RANGE = 24;
+const LOGIN = 'login';
 
 
 const styles = StyleSheet.create({
@@ -64,6 +68,8 @@ const styles = StyleSheet.create({
 });
 
 function App() {
+  // we have to define dispatch so we can use it
+  const dispatch = useDispatch();
   // Declare a new state variable called page.
   // When the app loads, set the page to 'home'
   const [page, setPage] = useState('home');
@@ -98,6 +104,9 @@ function App() {
   return (
     <div>
       <div className={css(styles.App__container)}>
+        <Button onClick={() => dispatch(login())} >
+          LOGIN
+        </Button>
         <React.Fragment>
           <Header/>
           {topArticles}
